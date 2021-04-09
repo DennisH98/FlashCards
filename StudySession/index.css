@@ -1,0 +1,94 @@
+
+.incorrectCounter {
+    color: red;
+}
+
+.correctCounter {
+    color: green;
+}
+
+.list-header {
+    width: 100%;
+    height: 125px;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+	background-color: #a6192e;
+}
+
+.list-header-content {
+	line-height: 75px;
+	text-align: left;
+	color: white;
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+.list-content {
+    padding-top: 125px;
+}
+
+.list-footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    background-color: #a6192e;
+}
+
+.list-footer-content {
+    line-height: 50px;
+	padding-left: 20px;
+}
+
+.contentArea {
+    height: 200px;
+    width: 100%; 
+    margin-top: 25px;
+    text-align: center;
+    background-color: lightgray; 
+    display: block;
+    padding-top:50px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.prev {
+    text-align: right;
+    margin-top: 130px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+.next {
+    text-align: left;
+    margin-top:130px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btnText{
+    font-size: 14px; 
+}
+
+.display_none {
+    display: none !important;
+}
+
+.advBtn {
+    color: grey;
+    cursor: pointer;
+}
+
+.answerBtn {
+    width: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.empty_card_screen {
+    text-align: center;
+    padding-top: 125px;
+}

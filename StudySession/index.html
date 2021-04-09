@@ -1,0 +1,133 @@
+<!-- main page for studying(testing session) -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+     <!-- CDN CSS files -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+    <!-- End of CDN CSS files -->
+        <title>Study Page</title>
+    </head>
+<body>
+    <!-- Bootstrap and Javascript/Jquery CDNs -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            
+            
+            <!-- bootstrap table js and css -->
+            <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+            
+            <!-- font awesome icons for jQuery -->
+            <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- End of CDNs -->
+
+    <!-- modules -->
+    
+    <script type="text/javascript" src="../helperFunctions.js"></script>
+    <script type="text/javascript" src="../constants.js"></script>
+    <script type="text/javascript" src="./functions.js"></script>
+
+    <!-- Load index javascript file -->
+    <script type="text/javascript" src="./index.js"></script>
+
+    <!-- load index css file -->
+    <link rel="stylesheet" href="./index.css">
+
+    <div class="list-header">
+        <div class="list-header-content">
+	    <h1 id="titleHeader">Study Page: </h1>
+        </div>
+    </div>
+    
+    <div class="list-content">
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col col-2 offset-lg-4 border border-black text-center">
+                    <h4>Incorrect</h4>
+                </div>
+                <div class="col col-2 border border-black text-center">
+                    <h4>Correct</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-2 offset-lg-4 border border-black text-center">
+                    <h4 id="incorrectNum" class="incorrectCounter">0</h4>
+                </div>
+                <div class="col col-2 border border-black text-center">
+                    <h4 id="correctNum" class="correctCounter">0</h4>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <h4 class="text-center mt-3">
+            <i>Click the card to toggle between question and answer</i>
+        </h4>
+
+        <div class="container-fluid">
+            <div class="row">
+                <span class="col col-1 offset-lg-2 prev">
+                    <i id="prevFlashcardBtn" class="fas fa-chevron-circle-left advBtn display_none"></i>
+                </span>
+            
+                <div class="col col-6 cardDeck">
+                    <div id='flashcard' class="contentArea">
+                    </div>
+
+                    <div id='pastFlashcard' class="contentArea display_none">
+                    </div>
+
+                    <div id="no_cards_screen" class="empty_card_screen display_none">
+                        <h2>
+                            You have finished studying all of your flashcards!
+                        </h2>
+                    </div>
+                </div>
+                <span class="col col-1 next">
+                    <i id="nextFlashcardBtn" class="fas fa-chevron-circle-right advBtn display_none"></i>
+                </span> 
+            </div>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col col-6 offset-lg-3">
+                    <div class="container">
+                        <div class="container">
+                            <div id="btn-row" class="row display_none">
+                                <div class="col col-12 text-center">
+                                    <button type="button" id="redBtn" class="btn btn-danger btnText answerBtn">I did not get it</button>
+                                    <button type="button" id="yellowBtn" class="btn btn-warning btnText answerBtn">I got it</button>
+                                    <button type="button" id="greenBtn" class="btn btn-success btnText answerBtn">Easy, do not show again</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-footer">
+                <div class="list-footer-content">
+                    <a class="btn btn-primary" href="../index.html" role="button">Back</a>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

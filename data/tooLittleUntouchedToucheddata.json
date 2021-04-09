@@ -1,0 +1,25 @@
+{
+    "id": "flash_deck_1",
+    "data": [
+        {
+            "question": "What is the moon landing? 2",
+            "answer": "Something that is always spoken about in CMPT105W,106.",
+            "numberTimesCorrect": 0
+        },
+        {
+            "question": "What is the moon landing?",
+            "answer": "Something that is always spoken about in CMPT105W,106.",
+            "numberTimesCorrect": 0
+        },
+        {
+            "question": "Some other question 1",
+            "answer": "Bye",
+            "numberTimesCorrect": 20
+        },
+        {
+            "question": "Some other question 3",
+            "answer": "Bye",
+            "numberTimesCorrect": 5
+        }
+    ]
+}
